@@ -2,6 +2,7 @@ $primary-color: #ffd700;
 
 @import "animate.css";
 @import '~loaders.css/src/animations/pacman.scss';
+
 @font-face {
   font-family:"Helvetica Neue";
   src: url(./assets/fonts/helvetica-neu.ttf) format("ttf");
@@ -11,7 +12,6 @@ $primary-color: #ffd700;
   font-family:"La Bella Aurore";
   src: url(./assets/fonts/LaBelleAurore.woff2) format("woff2");
 }
-
 
 @font-face {
   font-family:"Coolvetica";
@@ -33,6 +33,17 @@ textarea{
   bottom: 0;
   width: 50px;
   height: 50px;
-  animation: fadeOut .5s .5s ;
+  animation: fadeOut .5s .5s;
   animation-fill-mode: forwards;
+}
+
+// Mobile-specific adjustments
+@media screen and (max-width: 768px) {
+  .App {
+    padding-top: 60px; // Account for fixed mobile header
+  }
+  
+  .page {
+    margin-left: 0 !important; // Remove sidebar margin on mobile
+  }
 }

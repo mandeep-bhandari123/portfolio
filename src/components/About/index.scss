@@ -7,7 +7,16 @@
     position: absolute;
     right: 0;
     overflow: hidden;
+    
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        position: relative;
+        padding-top: 20px;
+        height: 300px;
+        margin-top: 20px;
+    }
 }
+
 .cubesipinner{
     animation-name : spincube;
     animation-timing-function: ease-in-out;
@@ -16,6 +25,17 @@
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-left: calc(50% - 100px);
+    
+    @media screen and (max-width: 768px) {
+        transform-origin: 75px 75px 0;
+        margin-left: calc(50% - 75px);
+    }
+    
+    @media screen and (max-width: 480px) {
+        transform-origin: 60px 60px 0;
+        margin-left: calc(50% - 60px);
+    }
+    
     div{
         position: absolute;
         width: 200px;
@@ -27,24 +47,85 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 20px lightyellow;
+        
+        @media screen and (max-width: 768px) {
+            width: 150px;
+            height: 150px;
+            font-size: 75px;
+        }
+        
+        @media screen and (max-width: 480px) {
+            width: 120px;
+            height: 120px;
+            font-size: 60px;
+        }
     }
+    
     .face1{
         transform: translateZ(100px);
+        
+        @media screen and (max-width: 768px) {
+            transform: translateZ(75px);
+        }
+        
+        @media screen and (max-width: 480px) {
+            transform: translateZ(60px);
+        }
     }
     .face2{
         transform: rotateY(90deg) translateZ(100px);
+        
+        @media screen and (max-width: 768px) {
+            transform: rotateY(90deg) translateZ(75px);
+        }
+        
+        @media screen and (max-width: 480px) {
+            transform: rotateY(90deg) translateZ(60px);
+        }
     }
     .face3{
         transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        
+        @media screen and (max-width: 768px) {
+            transform: rotateY(90deg) rotateX(90deg) translateZ(75px);
+        }
+        
+        @media screen and (max-width: 480px) {
+            transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+        }
     }
     .face4{
         transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        
+        @media screen and (max-width: 768px) {
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(75px);
+        }
+        
+        @media screen and (max-width: 480px) {
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+        }
     }
     .face5{
         transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        
+        @media screen and (max-width: 768px) {
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(75px);
+        }
+        
+        @media screen and (max-width: 480px) {
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+        }
     }
     .face6{
         transform: rotateX(-90deg) translateZ(100px);
+        
+        @media screen and (max-width: 768px) {
+            transform: rotateX(-90deg) translateZ(75px);
+        }
+        
+        @media screen and (max-width: 480px) {
+            transform: rotateX(-90deg) translateZ(60px);
+        }
     }
 }
 
