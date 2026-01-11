@@ -11,4 +11,9 @@ body {
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 }

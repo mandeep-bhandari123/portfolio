@@ -4,7 +4,18 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
+import L from 'leaflet'
+import 'leaflet/dist/leaflet.css'
 import './index.scss'
+
+// Fix for default markers in react-leaflet
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
+
 const Contact = () =>{
     const [letterClass, setLetterClass] = useState("text-animate")
     const refForm = useRef()
@@ -86,11 +97,15 @@ const Contact = () =>{
                     <MapContainer
                         center={[27.744913, 85.318302]}
                         zoom={13}
-                        style={{ height: '100%', width: '100%' }} // important!
+                        style={{ height: '100%', width: '100%' }}
+                        scrollWheelZoom={false}
                     >
-                        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                        <TileLayer 
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        />
                         <Marker position={[27.744913, 85.318302]}>
-                        <Popup>Hi this is where I live :)</Popup>
+                            <Popup>Hi this is where I live :)</Popup>
                         </Marker>
                     </MapContainer>
                 </div>
