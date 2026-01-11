@@ -6,6 +6,13 @@
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+
+        @media screen and (max-width: 768px) {
+            left: 5%;
+            width: 90%;
+            top: 45%;
+            padding-right: 5%;
+        }
     }
 
     h1{
@@ -16,7 +23,8 @@
         font-weight: 400;
         
         @media screen and (max-width: 768px) {
-            font-size: 40px;
+            font-size: 32px;
+            line-height: 1.2;
         }
         
         &::before{
@@ -29,6 +37,12 @@
             left: 15px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                margin-top: -30px;
+                left: 10px;
+            }
         }
         &::after{
             content: "</h1>";
@@ -40,6 +54,12 @@
             margin-left: 20px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                margin-top: 12px;
+                margin-left: 15px;
+            }
         }
     }
 
@@ -50,6 +70,11 @@
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
+
+        @media screen and (max-width: 768px) {
+            width: 40px;
+            margin-left: 15px;
+        }
     }
 }
 h2{
@@ -62,7 +87,9 @@ h2{
     animation: fadeIn 1s 1.8s backwards;
     
     @media screen and (max-width: 768px) {
-        font-size: 18px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin-top: 15px;
     }
 }
 
@@ -79,6 +106,18 @@ h2{
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
+    
+    @media screen and (max-width: 768px) {
+        padding: 12px 20px;
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-top: 20px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: none;
+    }
     
     &:hover{
         background-color: #ffd700;

@@ -6,6 +6,7 @@
     
     @media screen and (max-width: 768px) {
         margin-left: 0; /* Remove margin on mobile */
+        margin-bottom: 60px; /* Add bottom margin for mobile sidebar */
     }
 }
 .top-tags{
@@ -62,6 +63,14 @@
         vertical-align: middle;
         display: table-cell;
         max-height: 90%;
+
+        @media screen and (max-width: 768px) {
+            left: 5%;
+            width: 90%;
+            top: 45%;
+            display: block;
+            padding-right: 5%;
+        }
     
     h1{
         font-size: 53px;

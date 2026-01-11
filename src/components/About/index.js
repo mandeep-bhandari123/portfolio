@@ -28,7 +28,7 @@ const About =()=> {
                 idx  = {15}/>
             </h1>
             <p>Hi I am Mandeep Bhandari.</p>
-            <p>I'm very amibitious in AI/ML , Agentic AI, and Web dievelopment </p>
+            <p>I'm very amibitious in AI/ML , Agentic AI, and Web Developer </p>
             <p>I am currently building cool project and in high school</p>
         </div>
         <div className='stage-cube-cont'>
