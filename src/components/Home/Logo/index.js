@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
-import gsap from 'gsap-trial'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
+import gsap from 'gsap'
+import DrawSVGPlugin from 'gsap/DrawSVGPlugin'
 
 import { ReactComponent as OutlineSVG } from '../../../assets/images/file.svg'
 import './index.scss'
