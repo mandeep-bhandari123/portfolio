@@ -1,0 +1,27 @@
+.logo-container {
+  position: absolute;
+  top: 20%;          // vertical center
+  right: 50%;         // push to right side
+  transform: translateY(-50%);
+  width: 250px;      // fixed width
+  height: 250px;     // fixed height to match width
+  pointer-events: none;
+}
+
+.outline-svg{
+  position: absolute; // stack on top of each other
+  top: 0;
+  left: 0;
+  width: 450%;
+  height: 350%;
+}
+
+.outline-svg path {
+    opacity: .7;
+  stroke: #ffd700;
+  stroke-width: 4;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+          // behind solid logo
+}
