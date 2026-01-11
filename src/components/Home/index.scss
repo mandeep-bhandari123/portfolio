@@ -6,17 +6,6 @@
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
-        
-        @media screen and (max-width: 768px) {
-            position: relative;
-            left: 0;
-            top: 0;
-            transform: none;
-            width: 100%;
-            max-height: none;
-            padding: 80px 20px 20px;
-            text-align: center;
-        }
     }
 
     h1{
@@ -27,12 +16,7 @@
         font-weight: 400;
         
         @media screen and (max-width: 768px) {
-            font-size: 36px;
-            line-height: 1.2;
-        }
-        
-        @media screen and (max-width: 480px) {
-            font-size: 28px;
+            font-size: 40px;
         }
         
         &::before{
@@ -45,13 +29,6 @@
             left: 15px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
-            
-            @media screen and (max-width: 768px) {
-                font-size: 14px;
-                margin-top: -30px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
         }
         &::after{
             content: "</h1>";
@@ -63,14 +40,6 @@
             margin-left: 20px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
-            
-            @media screen and (max-width: 768px) {
-                font-size: 14px;
-                margin-top: 10px;
-                margin-left: 0;
-                left: 50%;
-                transform: translateX(-50%);
-            }
         }
     }
 
@@ -81,16 +50,6 @@
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
-        
-        @media screen and (max-width: 768px) {
-            width: 40px;
-            margin-left: 10px;
-        }
-        
-        @media screen and (max-width: 480px) {
-            width: 32px;
-            margin-left: 8px;
-        }
     }
 }
 h2{
@@ -104,13 +63,6 @@ h2{
     
     @media screen and (max-width: 768px) {
         font-size: 18px;
-        letter-spacing: 2px;
-        margin-top: 15px;
-    }
-    
-    @media screen and (max-width: 480px) {
-        font-size: 16px;
-        letter-spacing: 1px;
     }
 }
 
@@ -127,15 +79,6 @@ h2{
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
-    
-    @media screen and (max-width: 768px) {
-        float: none;
-        display: inline-block;
-        margin-top: 20px;
-        font-size: 12px;
-        letter-spacing: 3px;
-        padding: 12px 20px;
-    }
     
     &:hover{
         background-color: #ffd700;

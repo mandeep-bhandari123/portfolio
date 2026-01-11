@@ -36,14 +36,3 @@ textarea{
   animation: fadeOut .5s .5s;
   animation-fill-mode: forwards;
 }
-
-// Mobile-specific adjustments
-@media screen and (max-width: 768px) {
-  .App {
-    padding-top: 60px; // Account for fixed mobile header
-  }
-  
-  .page {
-    margin-left: 0 !important; // Remove sidebar margin on mobile
-  }
-}
