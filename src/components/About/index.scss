@@ -7,7 +7,7 @@
     position: absolute;
     right: 0;
     overflow: hidden;
-    
+
     @media screen and (max-width: 768px) {
         width: 100%;
         position: relative;
@@ -25,12 +25,12 @@
     transform-style: preserve-3d;
     transform-origin: 100px 100px 0;
     margin-left: calc(50% - 100px);
-    
+
     @media screen and (max-width: 768px) {
         transform-origin: 75px 75px 0;
         margin-left: calc(50% - 75px);
     }
-    
+
     div{
         position: absolute;
         width: 200px;
@@ -42,52 +42,52 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0 0 20px lightyellow;
-        
+
         @media screen and (max-width: 768px) {
             width: 150px;
             height: 150px;
             font-size: 75px;
         }
     }
-    
+
     .face1{
         transform: translateZ(100px);
-        
+
         @media screen and (max-width: 768px) {
             transform: translateZ(75px);
         }
     }
     .face2{
         transform: rotateY(90deg) translateZ(100px);
-        
+
         @media screen and (max-width: 768px) {
             transform: rotateY(90deg) translateZ(75px);
         }
     }
     .face3{
         transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-        
+
         @media screen and (max-width: 768px) {
             transform: rotateY(90deg) rotateX(90deg) translateZ(75px);
         }
     }
     .face4{
         transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-        
+
         @media screen and (max-width: 768px) {
             transform: rotateY(180deg) rotateZ(90deg) translateZ(75px);
         }
     }
     .face5{
         transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-        
+
         @media screen and (max-width: 768px) {
             transform: rotateY(-90deg) rotateZ(90deg) translateZ(75px);
         }
     }
     .face6{
         transform: rotateX(-90deg) translateZ(100px);
-        
+
         @media screen and (max-width: 768px) {
             transform: rotateX(-90deg) translateZ(75px);
         }
@@ -114,5 +114,18 @@
     }
     83%{
         transform: rotateX(90deg) rotateZ(90deg);
+    }
+}
+.text-zone {
+    p {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+        p {
+            font-size: 18px;
+        }
     }
 }

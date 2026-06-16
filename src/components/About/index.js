@@ -14,7 +14,7 @@ const About =()=> {
         const timeout = setTimeout(() => {
             setLetterClass('text-animate-hover')
         }, 3000)
-    
+
         return () => clearTimeout(timeout)
     }, [])
     return(
@@ -27,9 +27,11 @@ const About =()=> {
                 strArray={["A","b","o","u","t",' ','m','e']}
                 idx  = {15}/>
             </h1>
-            <p>Hi I am Mandeep Bhandari.</p>
-            <p>I'm very amibitious in AI/ML , Agentic AI, and Web Developer </p>
-            <p>I am currently building cool project and in high school</p>
+            <p>Hi, I'm Mandeep Bhandari, a passionate high school student and aspiring software engineer.</p>
+
+            <p>I enjoy building AI-powered applications, exploring Machine Learning, Agentic AI, and modern Web Development.</p>
+
+            <p>Currently, I'm working on projects with Python, React, and FastAPI while continuously learning new technologies and problem-solving skills.</p>
         </div>
         <div className='stage-cube-cont'>
             <div className='cubesipinner'>
