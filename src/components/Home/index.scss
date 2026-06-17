@@ -8,10 +8,14 @@
         max-height: 90%;
 
         @media screen and (max-width: 768px) {
-            left: 5%;
-            width: 90%;
-            top: 45%;
-            padding-right: 5%;
+            position: relative;
+            transform: none;
+            left: auto;
+            top: auto;
+            width: 100%;
+            padding: 80px 20px 20px;
+            box-sizing: border-box;
+            max-height: none;
         }
     }
 
@@ -113,10 +117,11 @@ h2{
         letter-spacing: 3px;
         margin-top: 20px;
         min-height: 44px;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         float: none;
+        width: fit-content;
     }
     
     &:hover{

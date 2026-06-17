@@ -6,7 +6,11 @@
     
     @media screen and (max-width: 768px) {
         margin-left: 0; /* Remove margin on mobile */
-        margin-bottom: 60px; /* Add bottom margin for mobile sidebar */
+        position: relative;
+        height: auto;
+        min-height: calc(100vh - 60px);
+        padding-bottom: 80px;
+        box-sizing: border-box;
     }
 }
 .top-tags{
@@ -25,6 +29,7 @@
     
     @media screen and (max-width: 768px) {
         left: 20px;
+        bottom: 70px; /* position above bottom navigation bar */
     }
 }
 
@@ -50,6 +55,14 @@
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
     animation-delay:1s;
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+        height: auto;
+        min-height: auto;
+        top: 0;
+        padding-bottom: 60px;
+    }
 }
 
 .about-page,.contact-page{
@@ -65,11 +78,15 @@
         max-height: 90%;
 
         @media screen and (max-width: 768px) {
-            left: 5%;
-            width: 90%;
-            top: 45%;
+            position: relative;
+            transform: none;
+            left: auto;
+            top: auto;
+            width: 100%;
+            padding: 80px 20px 20px;
+            box-sizing: border-box;
             display: block;
-            padding-right: 5%;
+            max-height: none;
         }
     
     h1{

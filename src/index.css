@@ -15,5 +15,7 @@ body {
   @media screen and (max-width: 768px) {
     overflow-x: hidden;
     overflow-y: auto;
+    height: auto;
+    min-height: 100%;
   }
 }
